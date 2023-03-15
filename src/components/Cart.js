@@ -18,7 +18,7 @@ function Cart () {
         <h2 className="cart__title" >Shopping Cart</h2>
         { cartGoods.length ?
           <ul className="cart__list">
-            {cartGoods.map((item, index) => (
+            {cartGoods.map((item) => (
               <li className="cart__list-item" key={item.id}>
                 <CartItem {...item} />
               </li>
