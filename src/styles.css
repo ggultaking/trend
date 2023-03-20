@@ -157,3 +157,19 @@ body {
 .cart-item__button:hover {
   opacity: 0.8;
 }
+.cart__bottom{
+  display: flex;
+  justify-content: space-between;
+}
+.cart__delete-all{
+  background-color: red;
+  color: white;
+  border-radius: 12%;
+  font-size: 15px;
+  height:30px;
+  margin-top: 6px;
+
+}
+.cart__delete-all:hover{
+opacity: 0.8;
+}

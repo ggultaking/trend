@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { addGoodAction } from "../redux/basket/action";
+import { addGoodAction,showDeleteAllButtonAction  } from "../redux/basket/action";
 import "../styles.css";
 
 
@@ -8,7 +8,7 @@ function GoodsItem ({title,description,price,id}){
 const dispatch=useDispatch();
 const addToBasket=()=>{
 dispatch(addGoodAction({title,price,id}))
-console.log(title,price)
+dispatch(showDeleteAllButtonAction());
 
 }
     return ( 
